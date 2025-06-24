@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import CounterButton from './CounterButton';
-import CounterButton from './CounterButton2';
 import CounterButton2 from './CounterButton2';
 
 // In most cases, instead of writing shouldComponentUpdate()
