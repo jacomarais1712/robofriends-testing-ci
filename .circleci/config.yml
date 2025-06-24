@@ -19,14 +19,22 @@ jobs:
        - image: circleci/node:latest
      steps:
        - checkout
-       - run: echo "Helllooooo!"
+       - run: echo "Hellloooooooo!"
+   jacotest:
+      docker:
+       - image: circleci/node:latest
+      steps:
+       - checkout
+       - run: echo "Jaco is running tests on circleCI!"
 workflows:
   version: 2
   build-test-and-lint:
     jobs:
       - build
       - hithere
+      - jacotest
       - test:
           requires:
             - hithere
+            - jacotest
             
