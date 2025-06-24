@@ -19,7 +19,7 @@ jobs:
        - image: circleci/node:latest
      steps:
        - checkout
-       - run: echo "Hellloooooooo!"
+       - run: echo "Hellloooooooooo!"
    jacotest:
       docker:
        - image: circleci/node:latest
